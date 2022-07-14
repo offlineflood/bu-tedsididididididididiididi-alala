@@ -14,8 +14,32 @@ app = Client(
 
 @app.on_message(filters.command("start"))
 async def _py(client: Client, message: Message):
-    await message.reply_text('Pyrogram is a Python library for Telegram bots.')
-
+    await message.reply_text('Salam Mən [Dejavu Chat Bot](http://t.me/BipxkxkxylylylplyllflpBOT)-am.\nGrouplarinizda Əyləncəli vaxd Keçirmək üçün Yaradılmuşam.\n Hakkımda Məlumat üçün /help Toxunun.')
+               buttons=(
+               
+		              [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/BipxkxkxylylylplyllflpBOT?startgroup=a')],
+                      [Button.url('Qurup🛠', 'https://t.me/DejavuTeam')],
+                      [Button.url('Kanal📢', 'https://t.me/DejavuSupport')],
+		              [Button.url('Sahib👨‍💻', 'https://t.me/MUCVE_M')],
+                      [Button.url('➕ Dejavu Music Bot ➕','http://t.me/DejavuMusiciBot?startgroup=a')],
+                    # [Button.url('➕ K.M Nəzarət Bot ➕','http://t.me/KohneMekanNezaretBot?startgroup=a')],
+                     ),
+                    link_preview=False
+                   )
+                
+       
+       @app.on_message(filters.command("salam"))
+       async def _py(client: Client, message: Message):
+       await message.reply_text('Aleykum Salam')
+              
+       @app.on_message(filters.command("necesiz"))
+       async def _py(client: Client, message: Message):
+       await message.reply_text('sukur yaxsi olasan.')
+        
+        
+        
+        
+        
 @app.on_message(filters.new_chat_members, group=1)
 async def hg(bot: Client, msg: Message):
     for new_user in msg.new_chat_members:
