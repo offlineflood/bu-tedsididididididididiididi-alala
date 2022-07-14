@@ -29,7 +29,10 @@ anlik_calisan = []
 
 tekli_calisan = []
 
-
+@client.on(events.NewMessage(pattern="^salam$"))
+async def start(event):
+  await event.reply("**🤖Salam Mən [Usta Taggger Bot](http://t.me/ustataggerbot)-u.**\n**Qurupunuz'daki  bütün üzvləri tağ etmək səlahiyyətinə sahibəm.\n\n🤖Əmrlər üçün /help yazıb məndən kömək ala bilərsiniz.**",
+              
 
 
 
