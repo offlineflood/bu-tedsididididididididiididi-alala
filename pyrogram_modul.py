@@ -28,11 +28,11 @@ async def _py(client: Client, message: Message):
                    #)
                 
        
-       @app.on_message(filters.command("salam"))
+       @app.on_message(filters.command("start"))
        async def _py(client: Client, message: Message):
        await message.reply_text('Aleykum Salam')
               
-       @app.on_message(filters.command("necesiz"))
+       @app.on_message(filters.command(" hey "))
        async def _py(client: Client, message: Message):
        await message.reply_text('sukur yaxsi olasan.')
         
