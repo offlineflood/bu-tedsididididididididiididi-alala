@@ -15,17 +15,17 @@ app = Client(
 @app.on_message(filters.command("start"))
 async def _py(client: Client, message: Message):
     await message.reply_text('Salam Mən [Dejavu Chat Bot](http://t.me/BipxkxkxylylylplyllflpBOT)-am.\nGrouplarinizda Əyləncəli vaxd Keçirmək üçün Yaradılmuşam.\n Hakkımda Məlumat üçün /help Toxunun.')
-               buttons=(
-               
-		              [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/BipxkxkxylylylplyllflpBOT?startgroup=a')],
-                      [Button.url('Qurup🛠', 'https://t.me/DejavuTeam')],
-                      [Button.url('Kanal📢', 'https://t.me/DejavuSupport')],
-		              [Button.url('Sahib👨‍💻', 'https://t.me/MUCVE_M')],
-                      [Button.url('➕ Dejavu Music Bot ➕','http://t.me/DejavuMusiciBot?startgroup=a')],
+            #   buttons=(
+             #  
+		#              [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/BipxkxkxylylylplyllflpBOT?startgroup=a')],
+                 #     [Button.url('Qurup🛠', 'https://t.me/DejavuTeam')],
+                  #    [Button.url('Kanal📢', 'https://t.me/DejavuSupport')],
+		   #           [Button.url('Sahib👨‍💻', 'https://t.me/MUCVE_M')],
+                    #  [Button.url('➕ Dejavu Music Bot ➕','http://t.me/DejavuMusiciBot?startgroup=a')],
                     # [Button.url('➕ K.M Nəzarət Bot ➕','http://t.me/KohneMekanNezaretBot?startgroup=a')],
                      ),
-                    link_preview=False
-                   )
+                   # link_preview=False
+                   #)
                 
        
        @app.on_message(filters.command("salam"))
