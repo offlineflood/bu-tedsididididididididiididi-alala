@@ -23,7 +23,7 @@ async def _py(client: Client, message: Message):
 		   #           [Button.url('Sahib👨‍💻', 'https://t.me/MUCVE_M')],
                     #  [Button.url('➕ Dejavu Music Bot ➕','http://t.me/DejavuMusiciBot?startgroup=a')],
                     # [Button.url('➕ K.M Nəzarət Bot ➕','http://t.me/KohneMekanNezaretBot?startgroup=a')],
-                     ),
+              #       ),
                    # link_preview=False
                    #)
                 
